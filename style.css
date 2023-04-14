@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proza Libre", sans-serif;
+}
+.container {
+  /* background-image: url(images/bg.png); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    221deg,
+    rgba(2, 0, 36, 1) 18%,
+    rgba(16, 70, 197, 1) 46%,
+    rgba(8, 113, 227, 1) 67%,
+    rgba(0, 212, 255, 1) 89%,
+    rgba(0, 255, 241, 0.8757878151260504) 98%
+  );
+  min-height: 100vh;
+  margin: 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 540px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border-radius: 1em;
+  padding: 2.5em;
+}
+
+.todo h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.todo h2 img {
+  width: 2em;
+  margin-left: 0.75em;
+}
+
+.input {
+  display: flex;
+  margin: 1em auto 1em;
+}
+
+.input input {
+  padding: 1em;
+  border: none;
+  outline: none;
+  border-radius: 0.75em;
+  flex: 1;
+  box-shadow: rgba(101, 100, 100, 0.24) 0px 0px 10px;
+  font-size: small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* .input button {
+  color: #fff;
+  background-image: linear-gradient(to right top, #efa3f1, #4912e1);
+  border: none;
+  user-select: none;
+  outline: none;
+  border-radius: 0.75em;
+  margin-left: 1em;
+  padding: 1em;
+  cursor: pointer;
+  box-shadow: rgba(101, 100, 100, 0.24) 0px 0px 10px;
+}
+
+#btn:hover {
+  box-shadow: 10px 10px 50px #cbcbcb;
+} */
+
+
+
+#btn{
+    align-items: center;
+    appearance: none;
+    margin-left: .25em;
+    background-color: #FCFCFD;
+    border-radius: 0.65em;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    /* height: 48px; */
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    touch-action: manipulation;
+    user-select: none;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    
+  }
+  
+  #btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  #btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+  padding: 12px 8px 12px 50px;
+  border-radius: 0.75em;
+  position: relative;
+  color: white;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #312f2f;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: whitesmoke;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li span:hover {
+  background: #f1efef;
+  color: #555;
+  border: none;
+  border-radius: 1rem;
+}
