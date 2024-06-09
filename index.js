@@ -116,6 +116,12 @@ const inputBox = document.querySelector('#input-box');
 const listContainer = document.querySelector('#list-container');
 const checkedClass = 'checked';
 
+document.querySelector('#input-box').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      addTask();
+    }
+});
+
 function addTask() {
   if (!inputBox.value.trim()) {
     alert('Please enter a task name!');
