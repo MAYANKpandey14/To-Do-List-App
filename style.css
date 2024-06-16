@@ -37,6 +37,7 @@
   border-radius: 10px;
   border-radius: 1em;
   padding: 2.5em;
+  
 }
 
 .todo h2 {
@@ -187,3 +188,26 @@ ul li span:hover {
   border: none;
   border-radius: 1rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 540px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border-radius: 1em;
+  padding: 2.5em;
+  display : flex;
+  flex-direction : column;
+}
+}
+
+
+
+
