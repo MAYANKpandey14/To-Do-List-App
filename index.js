@@ -17,7 +17,7 @@ function addTask() {
   listContainer.appendChild(li);
 
   const span = document.createElement('span');
-  span.textContent = '\u00D7';
+  span.textContent = '\u00D7'; // creates cross sign for task delete button
   li.appendChild(span);
 
   inputBox.value = '';
