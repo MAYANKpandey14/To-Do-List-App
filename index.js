@@ -2,7 +2,7 @@
 
 const inputBox = document.querySelector('#input-box');
 const listContainer = document.querySelector('#list-container');
-const addButton = document.querySelector('#add-button'); // Assuming you have a button with this id
+const addButton = document.querySelector('#add-button'); 
 const checkedClass = 'checked';
 
 function addTask() {
